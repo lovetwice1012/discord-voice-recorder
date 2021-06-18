@@ -17,7 +17,7 @@ client.on('message', msg => {
     if (msg.content.startsWith(config.PREFIX)) {
         const commandBody = msg.content.substring(config.PREFIX.length).split(' ');
         const channelName = commandBody[1];
-        if (commandBody[0] === ('enter')) commands.enter(msg, "coa-globalchat");
+        if (commandBody[0] === ('enter')) commands.enter(msg, "coa-globalvc");
         if (commandBody[0] === ('exit')) commands.exit(msg);
     }
 });
